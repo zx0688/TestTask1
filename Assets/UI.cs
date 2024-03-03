@@ -37,6 +37,9 @@ public class UI : MonoBehaviour
 
         OnListUpdated += OnUpdateSelected;
 
+        for (int i = 0; i < 10; i++)
+            OnAdd();
+
     }
 
     private void OnUpdateSelected()
