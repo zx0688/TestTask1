@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
+    private static int PREGENERATED_ITEMS_COUNT = 10;
+
     [SerializeField] private Button add;
     [SerializeField] private Button remove;
     [SerializeField] private GameObject itemPrefab;
@@ -37,7 +39,7 @@ public class UI : MonoBehaviour
 
         OnListUpdated += OnUpdateSelected;
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < PREGENERATED_ITEMS_COUNT; i++)
             OnAdd();
 
     }
